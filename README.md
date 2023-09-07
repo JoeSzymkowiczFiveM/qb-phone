@@ -30,6 +30,15 @@ This script is not plug-and-play and is probably horribly exploitable, in it's c
 
 ![image](https://github.com/JoeSzymkowiczFiveM/qb-phone/assets/70592880/36f7da50-ee62-40ed-ac75-dc2345e42525)
 
+![image](https://github.com/JoeSzymkowiczFiveM/qb-phone/assets/70592880/ed35555f-d854-443d-89f8-b3ee1fd10c1d)
+
+![image](https://github.com/JoeSzymkowiczFiveM/qb-phone/assets/70592880/392c6904-f45f-4b03-807f-b6eb213afa44)
+
+![image](https://github.com/JoeSzymkowiczFiveM/qb-phone/assets/70592880/e55f898e-ea08-4693-91fb-af6ee6e053ba)
+
+![image](https://github.com/JoeSzymkowiczFiveM/qb-phone/assets/70592880/3dc6a01b-8ce5-40b8-a402-65e0ff333678)
+
+![image](https://github.com/JoeSzymkowiczFiveM/qb-phone/assets/70592880/805975c0-37df-4261-ab2b-d1d78ca4e3cb)
 
 
 ## Preview
