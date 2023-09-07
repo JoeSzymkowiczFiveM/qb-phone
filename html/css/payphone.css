@@ -1,0 +1,74 @@
+.payphone {
+    height: 100vh;
+    display: none;
+}
+
+.payphone-frame {
+    width: 50vh;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.payphone-dials {
+    position: relative;
+    height: 11vh;
+    width: 12vh;
+    margin: 0 auto;
+    top: 46vh;
+    left: 2vh;
+}
+
+.payphone-dial {
+    position: relative;
+    float: left;
+    width: 2.5vh;
+    height: 2.5vh;
+    background-color: rgba(221, 221, 221, 0.25);
+    margin-left: 1.1vh;
+    margin-top: 1.4vh;
+    top: -1.4vh;
+    text-align: center;
+    line-height: 2vh;
+    border-radius: 1vh;
+    transition: 0.1s;
+}
+
+.payphone-dial:hover {
+    background-color: rgba(221, 221, 221, 0.9);
+}
+
+.payphone-input {
+    position: relative;
+    width: 30vh;
+    margin: 0 auto;
+    top: 28vh;
+    left: -4.5vh;
+    font-size: 1.2vh;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.payphone-input > p {
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.payphone-call {
+    height: 2.2vh;
+    width: 5.2vh;
+    background-color: rgba(221, 221, 221, 0.25);
+    position: relative;
+    margin: 0 auto;
+    top: 21.5vh;
+    left: -14.2vh;
+    border-radius: 1vh;
+    transition: 0.1s;
+}
+
+.payphone-call:hover {
+    background-color: rgba(221, 221, 221, 0.9);
+}

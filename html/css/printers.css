@@ -1,0 +1,378 @@
+.printers-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: #636e72;
+    overflow: hidden;
+}
+
+.printers-header {
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+    background-color: #636e72;
+    top: 0;
+    border-bottom: .3vh solid #636e72;
+    color: rgb(255, 255, 255);
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+}
+
+.printers-header-picture {
+    position: absolute;
+    width: 23vh;
+    margin: 0 auto;
+    left: 0;
+    right: 1vh;
+    top: 4.5vh;
+}
+
+.printers-header>p {
+    line-height: 12vh;
+    text-indent: 2vh;
+}
+
+.printers-header>span {
+    position: absolute;
+    top: 9.5vh;
+    left: 2vh;
+    font-size: 1.2vh;
+    height: 2vh;
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.printers-overview {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.printers-app-header {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(43, 42, 42, 0);
+    text-indent: 1.9vh;
+    line-height: 14vh;
+    color: rgb(255, 255, 255);
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.8vh;
+    text-shadow: .1vh .1vh 0px #000000;
+}
+
+.printers-buttons {
+    position: absolute;
+    bottom: 1.2vh;
+    width: 85%;
+    height: 4.5vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.printers-button {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 30%;
+    background-color: pink;
+    margin-left: 1.655%;
+    margin-right: 1.655%;
+    border-radius: .5vh;
+    box-shadow: inset 0 0 .3vh 0 rgba(0, 0, 0, 0.4);
+    transition: .1s linear;
+    text-align: center;
+    color: white;
+    line-height: 4.6vh;
+    font-size: 1.4vh;
+    font-family: 'Samsung Sans Regular';
+    text-shadow: .05vh .05vh 0px #000000b2;
+}
+
+#setup-race {
+    width: 35%;
+    background-color: #0097e6;
+}
+
+#leaderboards-race {
+    width: 20%;
+    background-color: #e1b12c;
+    font-size: 1.6vh;
+}
+
+#create-race {
+    width: 35%;
+    background-color: #44bd32;
+}
+
+#setup-race:hover {
+    background-color: #1eaffd;
+}
+
+#leaderboards-race:hover {
+    background-color: #ffca37;
+}
+
+#create-race:hover {
+    background-color: #53e43d;
+}
+
+.printers-buttons {
+    display: none;
+    position: absolute;
+    bottom: 1vh;
+    width: 50%;
+    height: 4vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 101;
+}
+
+.printers-button {
+    position: relative;
+    height: 100%;
+    width: 45%;
+    float: left;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    line-height: 4.2vh;
+    background-color: black;
+    color: white;
+    font-size: 1.7vh;
+    border-radius: .5vh;
+    box-shadow: inset 0 0 .3vh 0 rgba(0, 0, 0, 0.4);
+    pointer-events: all;
+    transition: .05s linear;
+}
+
+#join-race {
+    background-color: #44bd32;
+}
+
+#quit-race {
+    background-color: #c23616;
+}
+
+#join-race:hover {
+    background-color: #4dcf39;
+}
+
+#quit-race:hover {
+    background-color: #e43c17;
+}
+
+#start-race {
+    background-color: #0590db;
+}
+
+#start-race:hover {
+    background-color: #16a2ee;
+}
+
+.printers-setup {
+    /* display: none; */
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(31, 31, 31);
+    z-index: 102;
+    left: -30vh;
+}
+
+.printerdropdown {
+    position: relative;
+    width: 22vh;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgb(204, 204, 204);
+    transition: all .5s ease;
+    font-size: 14px;
+    color: #474747;
+    height: 4vh;
+    text-align: left;
+    top: 15vh;
+    left: 2.4vh;
+    background-color: #fff;
+    outline: none;
+}
+
+.printerdropdown .select {
+    cursor: pointer;
+    display: block;
+    padding: 10px
+}
+
+.printerdropdown .select > i {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+}
+
+.printerdropdown:hover {
+    box-shadow: 0 0 4px rgb(204, 204, 204)
+}
+
+.printerdropdown:active {
+    background-color: #f8f8f8
+}
+
+.printerdropdown.active:hover,
+.printerdropdown.active {
+    box-shadow: 0 0 4px rgb(204, 204, 204);
+    border-radius: 5px 5px 0 0;
+    background-color: #f8f8f8
+}
+
+.printerdropdown.active .select > i {
+    transform: rotate(-90deg)
+}
+
+.printerdropdown .printerdropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 0 1px 5px 5px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9
+}
+
+.printerdropdown .printerdropdown-menu li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+} 
+
+.printerdropdown .printerdropdown-menu {
+    padding: 0;
+    list-style: none
+}
+
+.printerdropdown .printerdropdown-menu li:hover {
+    background-color: #f2f2f2
+}
+
+.printerdropdown .printerdropdown-menu li:active {
+    background-color: #e2e2e2
+}
+
+#printers-setup-urlheader {
+    position: absolute;
+    left: 2.5vh;
+    top: 21vh;
+    color: white;
+    font-family: 'Samsung Sans Regular';
+}
+
+.printers-setup-url {
+    position: absolute;
+    width: 22vh;
+    height: 4vh;
+    top: 22.5vh;
+    left: 2.5vh;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: .2vh solid white;
+    font-family: 'Samsung Sans Regular';
+    color: white;
+    transition: .1s linear;
+}
+
+.printers-setup-url::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: .5; /* Firefox */
+}
+
+.printers-setup-url:focus {
+    border-bottom: .2vh solid rgb(255, 40, 40);
+}
+
+.printers-setup-url::-webkit-inner-spin-button {
+    display: none;
+}
+
+#printers-setup-copiesheader {
+    position: absolute;
+    left: 2.5vh;
+    top: 28vh;
+    color: white;
+    font-family: 'Samsung Sans Regular';
+}
+
+.printers-setup-copies {
+    position: absolute;
+    width: 22vh;
+    height: 4vh;
+    top: 29.5vh;
+    left: 2.5vh;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: .2vh solid white;
+    font-family: 'Samsung Sans Regular';
+    color: white;
+    transition: .1s linear;
+}
+
+.printers-setup-copies::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: .5; /* Firefox */
+}
+
+.printers-setup-copies:focus {
+    border-bottom: .2vh solid rgb(255, 40, 40);
+}
+
+.printers-setup-buttons {
+    position: absolute;
+    bottom: 6vh;
+    width: 60%;
+    height: 5.5vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.printers-setup-button {
+    position: relative;
+    float: left;
+    width: 45%;
+    height: 100%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    text-align: center;
+    line-height: 5.5vh;
+    color: white;
+    font-size: 2.4vh;
+    border-radius: 1vh;
+    box-shadow: inset 0 0 .3vh 0 rgba(0, 0, 0, 0.4);
+    transition: .05s linear;
+}
+
+#setup-printer-accept {
+    background-color: #4ece3b;
+}
+
+#setup-printer-cancel {
+    background-color: #d33013;
+}
+
+#setup-printer-accept:hover {
+    background-color: #5ceb46;
+}
+
+#setup-printer-cancel:hover {
+    background-color: #eb3515;
+}

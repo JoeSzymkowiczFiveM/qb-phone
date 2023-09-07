@@ -1,0 +1,47 @@
+<div class="auctions-app">
+    <div class="auctions-home">
+        <div class="auctions-header">
+            <span id="auctions-header-text">Auctions</span>
+            <span id="auctions-header-name"></span>
+        </div>
+
+        <div class="auctions-list">
+            <!-- <div class="advert">
+                <span class="advert-sender">@JayNandes | 0612345678</span>
+                <p>Dit is een test advert Dit is een test advert Dit is een test advert Dit is een test advert Dit is een test advert</p>
+            </div> -->
+        </div>
+
+        <div class="auctions-add">
+            <i class="fas fa-plus auctions-icon"></i>
+        </div>
+    </div>
+
+    <div class="new-auction">
+        <div class="new-auction-header">
+            <span id="new-auction-header-text">New Auction</span>
+        </div>
+        <div class="auctionsDropdown">
+            <div class="select">
+                <span>Select a Track</span>
+                <i class="fa fa-chevron-left"></i>
+            </div>
+            <input type="hidden" name="gender">
+            <ul class="auctionsDropdown-menu"></ul>
+        </div>
+        <input maxlength="49" class="new-auction-name" placeholder="Title" required/>
+        <textarea maxlength="1020" class="new-auction-textarea" spellcheck="false" placeholder="Auction" required></textarea>
+
+        <div class="new-auction-footer">
+            <div class="new-auction-footer-item" id="new-auction-submit">
+                <i class="fas fa-check-circle new-auction-icon"></i>
+            </div>
+            <div class="new-auction-footer-item" id="new-auction-delete">
+                <i class="fas fa-trash-alt new-auction-icon"></i>
+            </div>
+            <div class="new-auction-footer-item" id="new-auction-back">
+                <i class="fas fa-arrow-circle-left new-auction-icon"></i>
+            </div>
+        </div>
+    </div>
+</div>

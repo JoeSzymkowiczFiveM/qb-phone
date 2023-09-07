@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QB Phone Rework</title>
+
+    <!-- CSS File's -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/tooltip.css">
+    <link rel="stylesheet" href="./css/settings.css">
+    <link rel="stylesheet" href="./css/phone.css">
+    <link rel="stylesheet" href="./css/twitter.css">
+    <link rel="stylesheet" href="./css/bank.css">
+    <link rel="stylesheet" href="./css/whatsapp.css">
+    <link rel="stylesheet" href="./css/garage.css">
+    <link rel="stylesheet" href="./css/mail.css">
+    <link rel="stylesheet" href="./css/darkweb.css">
+    <link rel="stylesheet" href="./css/meos.css">
+    <link rel="stylesheet" href="./css/crypto.css">
+    <link rel="stylesheet" href="./css/racing.css">
+    <link rel="stylesheet" href="./css/houses.css">
+    <link rel="stylesheet" href="./css/lawyers.css">
+    <link rel="stylesheet" href="./css/qstore.css">
+    <link rel="stylesheet" href="./css/trucker.css">
+    <link rel="stylesheet" href="./css/plants.css">
+    <link rel="stylesheet" href="./css/loans.css">
+    <link rel="stylesheet" href="./css/carboost.css">
+    <link rel="stylesheet" href="./css/silkroad.css">
+    <link rel="stylesheet" href="./css/notes.css">
+    <link rel="stylesheet" href="./css/taxi.css">
+    <link rel="stylesheet" href="./css/delivery.css">
+    <link rel="stylesheet" href="./css/groups.css">
+    <link rel="stylesheet" href="./css/pings.css">
+    <link rel="stylesheet" href="./css/darklog.css">
+    <link rel="stylesheet" href="./css/auctions.css">
+    <link rel="stylesheet" href="./css/gang.css">
+    <link rel="stylesheet" href="./css/printers.css">
+    <link rel="stylesheet" href="./css/payphone.css">
+
+    <!-- CDN's -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
+    <!-- Color CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <!-- Bootstrap -->
+</head>
+
+<body style="background-color: transparent !important" ;>
+    <div class="container disableSelection">
+        <img src="./img/samsung-s10.png" class="phone-frame">
+        <div class="phone-container phone-background">
+            <!-- Phone Header -->
+            <div class="phone-header">
+                <div id="phone-time">08:05</div>
+                <div id="phone-icons">
+                    <!-- <i class="fas fa-wifi" id="phone-vpn" data-toggle="tooltip" data-placement="left" title="VPN Enabled"></i>
+                    <i class="fas fa-signal" id="phone-signal" data-toggle="tooltip" data-placement="left" title="badger 5G"></i>
+                    <i class="fas fa-battery-three-quarters" id="phone-battery"></i> -->
+                </div>
+            </div>
+
+            <!-- Phone Notification -->
+            <div class="phone-notification-container">
+                <div class="notification-icon"></div>
+                <div class="notification-title"></div>
+                <div class="notification-text"></div>
+            </div>
+
+            <!-- Home Applications -->
+            <div class="phone-applications">
+                <div class="phone-footer-applications">
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="1"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="2"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="3"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="4"></div>
+                </div>
+
+                <div class="phone-home-applications">
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="5"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="6"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="7"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="8"></div>
+
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="9"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="10"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="11"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="12"></div>
+
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="13"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="14"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="15"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="16"></div>
+
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="17"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="18"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="19"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="20"></div>
+                </div>
+
+                <div class="phone-home-applications2">
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="21"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="22"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="23"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="24"></div>
+
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="25"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="26"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="27"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="28"></div>
+
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="29"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="30"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="31"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="32"></div>
+
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="33"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="34"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="35"></div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="36"></div>
+                </div>
+            </div>
+
+
+            <!-- Unread Alerts -->
+            <!-- <div class="app-unread-alerts">1</div> -->
+
+            <!-- Container for all application's -->
+            <div class="phone-application-container">
+                <div class="settings-app">
+                    <div class="settings-app-header">
+                        <p>Settings</p>
+                    </div>
+
+                    <div class="settings-app-tab-appereance">
+                        <div class="settings-app-tab-header">
+                            <p>Appearance</p>
+                        </div>
+                        <div class="settings-app-tab" data-settingstab="background">
+                            <div class="settings-tab-icon"><i class="fas fa-palette" style="color: #9b59b6;"></i></div>
+                            <div class="settings-tab-title">
+                                <p>Background</p>
+                            </div>
+                            <div class="settings-tab-description">
+                                <p>Standard</p>
+                            </div>
+                        </div>
+                        <div class="settings-app-tab" data-settingstab="profilepicture">
+                            <div class="settings-tab-icon"></div>
+                            <div class="settings-tab-title">
+                                <p>Profile picture</p>
+                            </div>
+                            <div class="settings-tab-description">
+                                <p>Standard</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="settings-app-tab-information">
+                        <div class="settings-app-tab-header">
+                            <p>Information</p>
+                        </div>
+                        <div class="settings-app-tab secondTab" data-settingstab="myPhone">
+                            <div class="settings-tab-icon"><i class="fas fa-phone-alt" style="color: #e67e22;"></i></div>
+                            <div class="settings-tab-title">
+                                <p>My number</p>
+                            </div>
+                            <div class="settings-tab-description" id="myPhoneNumber">
+                                <p>0612345678</p>
+                            </div>
+                        </div>
+                        <div class="settings-app-tab secondTab" data-settingstab="serialNumber">
+                            <div class="settings-tab-icon"><i class="fas fa-phone-alt" style="color: #e67e22;"></i></div>
+                            <div class="settings-tab-title">
+                                <p>Serial Number</p>
+                            </div>
+                            <div class="settings-tab-description" id="mySerialNumber">
+                                <p>0612345678</p>
+                            </div>
+                        </div>
+                        <!-- <div class="settings-app-tab secondTab" data-settingstab="numberrecognition">
+                            <label class="switch">
+                                    <input class="numberrec-box" type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+
+                            <div class="settings-tab-icon"><i class="fas fa-user-slash" style="color: #e67e22;"></i></div>
+                            <div class="settings-tab-title">
+                                <p>Call Anonymously</p>
+                            </div>
+                            <div class="settings-tab-description" id="numberrecognition">
+                                <p>Off</p>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="settings-background-tab">
+                        <div class="settings-app-header">
+                            <p>Background</p>
+                        </div>
+
+                        <div class="background-options">
+                            <div class="background-option" data-background="stars">
+                                <div class="background-option-icon"> <i class="fas fa-paint-brush"></i> </div>
+                                <div class="background-option-title"> Default </div>
+                                <div class="background-option-description"> This is the default background.</div>
+                                <div class="background-option-current"><i class="fas fa-check-circle"></i></div>
+                            </div>
+                            <div class="background-option" data-background="custom-background">
+                                <div class="background-option-icon"><i class="fas fa-paint-brush"></i></div>
+                                <div class="background-option-title">Personalized</div>
+                                <div class="background-option-description"> Your own personalized background from a URL.</div>
+                            </div>
+                        </div>
+
+                        <div class="background-buttons">
+                            <div class="background-button" id="accept-background">
+                                <p>Confirm</p>
+                            </div>
+                            <div class="background-button" id="cancel-background">
+                                <p>Cancel</p>
+                            </div>
+                        </div>
+
+                        <div class="background-custom">
+                            <div class="background-custom-title">Personalized Background</div>
+                            <input type="text" class="custom-background-input" placeholder="URL (.jpg/.png)" spellcheck="false">
+
+                            <div class="background-custom-buttons">
+                                <div class="custom-background-button" id="accept-custom-background">
+                                    <p>Confirm</p>
+                                </div>
+                                <div class="custom-background-button" id="cancel-custom-background">
+                                    <p>Cancel</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settings-profilepicture-tab">
+                        <div class="settings-app-header">
+                            <p>Avatar</p>
+                        </div>
+
+                        <div class="profilepicture-options">
+                            <div class="profilepicture-option" data-profilepicture="default">
+                                <div class="profilepicture-option-icon"> <i class="fas fa-paint-brush"></i> </div>
+                                <div class="profilepicture-option-title"> Default </div>
+                                <div class="profilepicture-option-description"> Default avatar.</div>
+                                <div class="profilepicture-option-current"><i class="fas fa-check-circle"></i></div>
+                            </div>
+                            <div class="profilepicture-option" data-profilepicture="custom-profilepicture">
+                                <div class="profilepicture-option-icon"><i class="fas fa-paint-brush"></i></div>
+                                <div class="profilepicture-option-title">Personalized</div>
+                                <div class="profilepicture-option-description"> Your own personalized avatar from a URL.</div>
+                            </div>
+                        </div>
+
+                        <div class="profilepicture-buttons">
+                            <div class="profilepicture-button" id="accept-profilepicture">
+                                <p>Confirm</p>
+                            </div>
+                            <div class="profilepicture-button" id="cancel-profilepicture">
+                                <p>Cancel</p>
+                            </div>
+                        </div>
+
+                        <div class="profilepicture-custom">
+                            <div class="profilepicture-custom-title">Personalized Avatar</div>
+                            <input type="text" class="custom-profilepicture-input" placeholder="URL (.jpg/.png)" spellcheck="false">
+
+                            <div class="profilepicture-custom-buttons">
+                                <div class="custom-profilepicture-button" id="accept-custom-profilepicture">
+                                    <p>Confirm</p>
+                                </div>
+                                <div class="custom-profilepicture-button" id="cancel-custom-profilepicture">
+                                    <p>Cancel</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-call-app">
+                    <div class="phone-call-incoming">
+                        <div class="phone-call-incoming-title">Incoming Call</div>
+                        <div class="phone-call-incoming-caller">Contact</div>
+                        <div class="phone-call-incoming-picture"></div>
+
+                        <i class="fas fa-phone" id="incoming-answer"></i>
+                        <i class="fas fa-phone" id="incoming-deny"></i>
+                    </div>
+
+                    <div class="phone-call-outgoing">
+                        <div class="phone-call-outgoing-title">Calling...</div>
+                        <div class="phone-call-outgoing-caller">Contact</div>
+                        <div class="phone-call-outgoing-picture"></div>
+
+                        <i class="fas fa-phone" id="outgoing-cancel"></i>
+                    </div>
+
+                    <div class="phone-call-ongoing">
+                        <div class="phone-call-ongoing-title">Ongoing</div>
+                        <div class="phone-call-ongoing-caller">Contact</div>
+                        <div class="phone-call-ongoing-picture"></div>
+                        <div class="phone-call-ongoing-time">05:05</div>
+
+                        <i class="fas fa-phone" id="ongoing-cancel"></i>
+                    </div>
+                </div>
+
+                <div class="phone-app">
+                    <div class="phone-app-header">
+                        <p>Phone</p>
+                        <span id="total-contacts">0 contacts</span>
+                    </div>
+
+                    <div class="phone-contacts">
+                        <div class="phone-contacts-header">
+                            <input type="text" id="contact-search" placeholder="Contact name" spellcheck="false">
+                            <i id="phone-search-icon" class="fas fa-search"></i>
+                            <i id="phone-plus-icon" class="fas fa-plus"></i>
+                        </div>
+
+                        <div class="phone-contact-list">
+                            <!-- <div class="phone-contact" data-contactid="1">
+                                    <div class="phone-contact-firstletter">P</div>
+                                    <div class="phone-contact-name">Pieter Post</div>
+                                    <div class="phone-contact-actions"><i class="fas fa-sort-down"></i></div>
+
+                                    <div class="phone-contact-action-buttons">
+                                        <i class="fas fa-phone-volume"></i>
+                                        <i class="fas fa-comment"></i>
+                                        <i class="fas fa-user-edit"></i>
+                                    </div>
+                                </div>-->
+                        </div>
+                    </div>
+
+                    <div class="phone-recent">
+                        <div class="phone-recent-header">
+                            <p>Phone</p>
+                        </div>
+
+                        <div class="phone-recent-calls">
+                            <!-- <div class="phone-recent-call"> <div class="phone-recent-call-image">P</div> <div class="phone-recent-call-name">Pieter Post</div> <div class="phone-recent-call-type"><i class="fas fa-phone-slash"></i></div> <div class="phone-recent-call-time">12:05</div> </div> -->
+                        </div>
+                    </div>
+
+                    <div class="phone-suggestedcontacts">
+                        <div class="phone-suggestedcontacts-header">
+                            Suggested Contacts
+                            <p class="amount-of-suggested-contacts">0 contacts</p>
+                        </div>
+
+                        <div class="suggested-contacts">
+                            <!-- <div class="suggested-contact"> <i class="fas fa-exclamation-circle"></i> <span class="suggested-name">Jay Nandes &middot; <span class="suggested-number">0612345678</span></span> </div> -->
+                            <!-- <div class="suggested-contact">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <span class="suggested-name">Jay Nandes &middot; <span class="suggested-number">0612345678</span></span>
+                                </div> -->
+                        </div>
+                    </div>
+
+                    <div class="phone-keypad noselect">
+                        <div class="phone-keypad-header">
+                            <p>Phone</p>
+                        </div>
+                        <div>
+                            <input type="text" id="phone-keypad-input">
+                        </div>
+
+                        <div class="phone-keypad-keys">
+                            <div class="phone-keypad-key" data-keypadvalue="1">1</div>
+                            <div class="phone-keypad-key" data-keypadvalue="2">2</div>
+                            <div class="phone-keypad-key" data-keypadvalue="3">3</div>
+                            <div class="phone-keypad-key" data-keypadvalue="4">4</div>
+                            <div class="phone-keypad-key" data-keypadvalue="5">5</div>
+                            <div class="phone-keypad-key" data-keypadvalue="6">6</div>
+                            <div class="phone-keypad-key" data-keypadvalue="7">7</div>
+                            <div class="phone-keypad-key" data-keypadvalue="8">8</div>
+                            <div class="phone-keypad-key" data-keypadvalue="9">9</div>
+                            <div class="phone-keypad-key" data-keypadvalue="*">Clear</div>
+                            <div class="phone-keypad-key" data-keypadvalue="0">0</div>
+                            <div class="phone-keypad-key" data-keypadvalue="#">#</div>
+                        </div>
+                        <div class="phone-keypad-key-call"><i class="fas fa-phone-alt"></i></div>
+                    </div>
+
+                    <div class="phone-add-contact">
+                        <div class="phone-add-contact-header">
+                            <p>Add Contact</p>
+                        </div>
+
+                        <i id="phone-add-contact-name-icon" class="fas fa-user"></i>
+                        <input type="text" class="phone-add-contact-name" placeholder="Contact Name" required spellcheck="false">
+
+                        <i id="phone-add-contact-number-icon" class="fas fa-phone-alt"></i>
+                        <input type="number" class="phone-add-contact-number" placeholder="Phone number" required spellcheck="false">
+
+                        <i id="phone-add-contact-iban-icon" class="fas fa-money-check"></i>
+                        <input type="text" class="phone-add-contact-iban" placeholder="Bank nr. (Not required)" required spellcheck="false">
+
+                        <div class="phone-add-contact-buttons">
+                            <div class="phone-add-contact-button" id="add-contact-save">
+                                <p>Save</p>
+                            </div>
+                            <div class="phone-add-contact-button" id="add-contact-cancel">
+                                <p>Cancel</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phone-edit-contact">
+                        <div class="phone-edit-contact-header">
+                            <p>Add Contact</p>
+                        </div>
+
+                        <i id="phone-edit-contact-name-icon" class="fas fa-user"></i>
+                        <input type="text" class="phone-edit-contact-name" placeholder="Contact Name" required spellcheck="false">
+
+                        <i id="phone-edit-contact-number-icon" class="fas fa-phone-alt"></i>
+                        <input type="number" class="phone-edit-contact-number" placeholder="Phone number" required spellcheck="false">
+
+                        <i id="phone-edit-contact-iban-icon" class="fas fa-money-check"></i>
+                        <input type="text" class="phone-edit-contact-iban" placeholder="Bank nr. (Not required)" required spellcheck="false">
+
+                        <div class="phone-edit-contact-buttons">
+                            <div class="phone-edit-contact-button" id="edit-contact-save">
+                                <p>Save</p>
+                            </div>
+                            <div class="phone-edit-contact-button" id="edit-contact-delete">
+                                <p>Delete</p>
+                            </div>
+                            <div class="phone-edit-contact-button" id="edit-contact-cancel">
+                                <p>Cancel</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phone-app-footer">
+                        <div class="phone-app-footer-button" data-phonefootertab="suggestedcontacts">
+                            <p>Suggested</p>
+                        </div>
+                        <div class="phone-app-footer-button" data-phonefootertab="keypad">
+                            <p>Keypad</p>
+                        </div>
+                        <div class="phone-app-footer-button" data-phonefootertab="recent">
+                            <p>Recent</p>
+                        </div>
+                        <div class="phone-app-footer-button phone-selected-footer-tab" data-phonefootertab="contacts">
+                            <p>Contacts</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="houses-app">
+                    <div class="houses-app-header">
+                        <div class="houses-app-header-tab houses-app-header-tab-selected" data-housetab="myhouses">
+                            <p>My Houses</p>
+                        </div>
+                        <div class="houses-app-header-tab" data-housetab="mykeys">
+                            <p>My Keys</p>
+                        </div>
+                    </div>
+
+                    <div class="house-app-myhouses-container">
+                        <!-- <div class="myhouses-house">
+                                <div class="myhouse-house-icon"><i class="fas fa-home"></i></div>
+                                <div class="myhouse-house-titel">Grove St. 1 | Tier 1</div>
+                                <div class="myhouse-house-details"><i class="fas fa-key"></i>&nbsp;&nbsp;5</div>
+                            </div> -->
+                    </div>
+
+                    <div class="house-app-mykeys-container">
+                        <!-- <div class="mykeys-key"> <span class="mykeys-key-label">Test</span> <span class="mykeys-key-sub">Klik om GPS in te stellen</span> </div> -->
+                        <!-- <div class="mykeys-key">
+                                <span class="mykeys-key-label">Test</span>
+                                <span class="mykeys-key-sub">Klik om GPS in te stellen</span>
+                        </div> -->
+                    </div>
+
+                    <div class="myhouses-options-container">
+                        <div class="myhouses-options">
+                            <div class="myhouses-options-header">HOUSE OPTIONS</div>
+                            <div class="myhouses-option" id="myhouse-option-transfer">TRANSFER</div>
+                            <div class="myhouses-option" id="myhouse-option-keys">KEYS</div>
+                            <br>
+                            <br>
+                            <div class="myhouses-option" id="myhouse-option-close">CLOSE</div>
+                        </div>
+
+                        <div class="myhouse-option-transfer-container">
+                            <div class="myhouse-option-transfer-container-header">Transfer House</div>
+                            <input class="myhouse-option-transfer-container-citizenid" type="text" spellcheck="false" placeholder="Citizen Id" required>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="myhouses-option" id="myhouse-option-transfer-confirm">CONFIRM</div>
+                            <div class="myhouses-option" id="myhouse-option-transfer-back">BACK</div>
+                        </div>
+
+                        <div class="myhouse-option-keys-container">
+                            <div class="keys-container">
+                                <!-- <div class="house-key"> <span class="house-key-holder">Test Test</span> <div class="house-key-delete"><i class="fas fa-trash"></i></div> </div> -->
+                                <!-- <div class="house-key">
+                                        <span class="house-key-holder">Test Test</span>
+                                        <div class="house-key-delete"><i class="fas fa-trash"></i></div>
+                                    </div> -->
+                            </div>
+                            <div class="myhouses-option" id="myhouse-option-keys-back">BACK</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="garage-app">
+                    <div class="garage-app-header">
+                        My Garage
+                    </div>
+                    <div class="garage-homescreen">
+                        <div class="garage-vehicles">
+                            <!-- <div class="garage-vehicle">
+                                    <span class="garage-vehicle-firstletter">B</span>
+                                    <span class="garage-vehicle-name">BMW M5</span>
+                                </div> -->
+                        </div>
+                    </div>
+
+                    <div class="garage-detailscreen">
+                        <div class="garage-cardetails">
+                            <div class="vehicle-brand"><span class="vehicle-detail">Brand</span><span class="vehicle-answer">BMW M5</span></div>
+                            <div class="vehicle-model"><span class="vehicle-detail">Model</span><span class="vehicle-answer">BMW M5</span></div>
+                            <div class="vehicle-plate"><span class="vehicle-detail">License Plate</span><span class="vehicle-answer">BMW M5</span></div>
+                            <div class="vehicle-garage"><span class="vehicle-detail">Garage</span><span class="vehicle-answer">BMW M5</span></div>
+                            <div class="vehicle-status"><span class="vehicle-detail">Status</span><span class="vehicle-answer">BMW M5</span></div>
+                            &nbsp;
+                            <div class="vehicle-fuel"><span class="vehicle-detail">Fuel</span><span class="vehicle-answer">BMW M5</span></div>
+                            <div class="vehicle-engine"><span class="vehicle-detail">Engine</span><span class="vehicle-answer">BMW M5</span></div>
+                            <div class="vehicle-body"><span class="vehicle-detail">Bodywork</span><span class="vehicle-answer">BMW M5</span></div>
+
+                            <div class="garage-cardetails-footer">
+                                BACK
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="groups-app">
+                    <div class="groups-app-header">
+                        Groups Management
+                    </div>
+                    <div class="groups-homescreen">
+                        <div class="groups-general-action" id="create-group">
+                            <i class="fa-solid fa-person-circle-plus"></i>
+                            <span class="groups-general-action-title">Create Group</span>
+                            <span class="groups-general-action-description">Create a new group.</span>
+                        </div>
+
+                        <div class="groups-general-action" id="join-group">
+                            <i class="fa-solid fa-people-group"></i>
+                            <span class="groups-general-action-title">Available Groups</span>
+                            <span class="groups-general-action-description">Join an existing group.</span>
+                        </div>
+                    </div>
+
+                    <div class="groups-detailscreen">
+                        <div class="groups-general-action" id="leave-group">
+                            <i class="fa-solid fa-people-group"></i>
+                            <span class="groups-general-action-title">Leave Group</span>
+                            <span class="groups-general-action-description">Leave the existing group.</span>
+                        </div>
+                        <div class="groups-general-action" id="requests-group">
+                            <i class="fa-solid fa-people-group"></i>
+                            <span class="groups-general-action-title">Requests</span>
+                            <span class="groups-general-action-description">Manage requests.</span>
+                        </div>
+                        <div class="groups-general-action" id="group-tasks">
+                            <i class="fa-solid fa-people-group"></i>
+                            <span class="groups-general-action-title">Tasks</span>
+                            <span class="groups-general-action-description">View the groups tasks.</span>
+                        </div>
+                        <div class="groups-vehicles">
+                        </div>
+                        <div class="groups-footer" id="groups-details-footer">
+                            BACK
+                        </div>
+                    </div>
+
+                    <div class="groups-listscreen">
+                        <div class="groups-list">
+                        </div>
+                        <div class="groups-footer" id="groups-list-footer">
+                            BACK
+                        </div>
+                    </div>
+
+                    <div class="groups-requestscreen">
+                        <div class="groups-requestdetails">
+                        </div>
+                        <div class="groups-footer" id="groups-requests-footer">
+                            BACK
+                        </div>
+                    </div>
+
+                    <div class="groups-taskscreen">
+                        <div class="groups-tasksdetails">
+                        </div>
+                        <div class="groups-footer" id="groups-tasks-footer">
+                            BACK
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trucker-app">
+                    <div class="trucker-header">
+                        <span class="trucker-header-name"><span style="font-size: 1vh; color: rgba(255, 255, 255, 0.6);">Welkom</span><br><span id="trucker-name">Jay Yay</span></span>
+                        <div class="trucker-header-progress">
+                            <div class="trucker-header-progress-fill"></div>
+                            <span class="trucker-header-progress-text" id="trucker-header-progress-current" style="float: left;">Current: 100 REP</span>
+                            <span class="trucker-header-progress-text" id="trucker-header-progress-next" style="float: right;">Next: 200 REP</span>
+                        </div>
+                        <!-- <div class="trucker-header-currentlevel">1</div> -->
+                        <span class="trucker-header-description">Your current progression<br><span id="trucker-header-tier">Tier 1</span></span>
+                    </div>
+
+                    <div class="trucker-jobinfo">
+                        <div class="trucker-jobinfo-nojob">
+                            <i class="fas fa-ban"></i>
+                            <span id="trucker-jobinfo-nojob-text">You are not currently working</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lawyers-app">
+                    <div class="lawyers-header">
+                        <p>Law Office</p>
+                        <span>Available lawyers</span>
+                    </div>
+
+                    <div class="lawyers-list">
+                        <!-- <div class="lawyer-list">
+                                <div class="lawyer-list-firstletter">J</div>
+                                <div class="lawyer-list-fullname">Jay Nandes</div>
+                                <div class="lawyer-list-call"><i class="fas fa-phone"></i></div>
+                            </div>
+                            <div class="lawyer-list">
+                                <div class="lawyer-list-firstletter">J</div>
+                                <div class="lawyer-list-fullname">Jay Nandes</div>
+                                <div class="lawyer-list-call"><i class="fas fa-phone"></i></div>
+                            </div>
+                            <div class="lawyer-list">
+                                <div class="lawyer-list-firstletter">J</div>
+                                <div class="lawyer-list-fullname">Jay Nandes</div>
+                                <div class="lawyer-list-call"><i class="fas fa-phone"></i></div>
+                            </div> -->
+                    </div>
+                </div>
+
+                <div class="plants-app">
+                    <div class="plants-header">
+                        <p>Plant Monitor</p>
+                        <span>Check plant growth status</span>
+                    </div>
+
+                    <div class="plants-list">
+                        <!-- <div class="lawyer-list">
+                                <div class="lawyer-list-firstletter">J</div>
+                                <div class="lawyer-list-fullname">Jay Nandes</div>
+                                <div class="lawyer-list-call"><i class="fas fa-phone"></i></div>
+                            </div>
+                            <div class="lawyer-list">
+                                <div class="lawyer-list-firstletter">J</div>
+                                <div class="lawyer-list-fullname">Jay Nandes</div>
+                                <div class="lawyer-list-call"><i class="fas fa-phone"></i></div>
+                            </div>
+                            <div class="lawyer-list">
+                                <div class="lawyer-list-firstletter">J</div>
+                                <div class="lawyer-list-fullname">Jay Nandes</div>
+                                <div class="lawyer-list-call"><i class="fas fa-phone"></i></div>
+                            </div> -->
+                    </div>
+                </div>
+
+                <div class="deliveries-app">
+                    <div class="deliveries-header">
+                        <p>Q'ber Eats</p>
+                        <span>Complete deliveries in 30 minutes or less.</span>
+                    </div>
+
+                    <div class="deliveries-general-action">
+                        <i class="fa-solid fa-parachute-box"></i>
+                        <span class="deliveries-general-action-title">Start Deliveries</span>
+                        <span class="deliveries-general-action-description">Toggle recieving delivery orders.</span>
+                    </div>
+
+                    <div class="deliveries-list">
+                    </div>
+                </div>
+
+                <div class="loans-app">
+                    <div class="loans-header">
+                        <p>Loan Tracker</p>
+                        <span>Check the status of existing loans</span>
+                    </div>
+
+                    <div class="loans-list">
+                    </div>
+                </div>
+
+                <div class="carboosts-app">
+                    <div class="carboosts-header">
+                        <p>Vehicle Boosts</p>
+                        <span>These cars aint stealin' themselves</span>
+                    </div>
+
+                    <div class="carboosts-list">
+                    </div>
+                </div>
+
+                <div class="gang-app">
+                    <div class="gang-header">
+                        <p>Gang Management</p>
+                        <span>These cars aint stealin' themselves</span>
+                    </div>
+
+                    <div class="gang-list">
+                    </div>
+                </div>
+
+                <div class="darklogs-app">
+                    <div class="darklogs-home">
+                        <div class="darklogs-header">
+                            <span id="darklogs-header-text">DarkLog</span>
+                            <span id="darklogs-header-name">Get in good trouble, necessary trouble.</span>
+                        </div>
+
+                        <div class="darklogs-list">
+                            
+                        </div>
+                    </div>
+
+                    <div class="new-darklog">
+                        <div class="new-darklog-header">
+                            <span id="new-darklog-header-text">New Note</span>
+                        </div>
+                        <input maxlength="49" class="new-darklog-name" placeholder="Title" readonly required/>
+                        <textarea maxlength="1020" class="new-darklog-textarea" spellcheck="false" placeholder="Note" readonly required></textarea>
+
+                        <div class="new-darklog-footer">
+                            <div class="new-darklog-footer-item" id="new-darklog-submit">
+                                <i class="fas fa-check-circle new-darklog-icon"></i>
+                            </div>
+                            <div class="new-darklog-footer-item" id="new-darklog-delete">
+                                <i class="fas fa-trash-alt new-darklog-icon"></i>
+                            </div>
+                            <div class="new-darklog-footer-item" id="new-darklog-back">
+                                <i class="fas fa-arrow-circle-left new-darklog-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="silkroad-app">
+                    <div class="silkroads-header">
+                        <!-- <p>QMarket</p> -->
+                        <span>Browse the goods, buy with Qbits.</span>
+                        <img src="./img/silqroad.png" class="silkroads-header-picture">
+                    </div>
+
+                    <div class="silkroads-list">
+                    </div>
+                </div>
+
+                <div class="auctions-app">
+                    <div class="auctions-header">
+                        <!-- <p>QMarket</p> -->
+                        <!-- <span>Browse the goods, buy with Qbits.</span> -->
+                        <img src="./img/qbay.png" class="auctions-header-picture">
+                    </div>
+
+                    <div class="auctions-list">
+                    </div>
+
+                    <div class="open-auction">
+                        <div class="open-auction-header">
+                            <span id="open-auction-header-text">New Auction Header</span>
+                        </div>
+                        <div class="open-auction-body">
+                            <span id="open-auction-body-bidPrice">Current Bid - $</span>
+                            <span id="open-auction-body-bidPrice-value">420</span>
+                            <span id="open-auction-body-increment"><i class="fas fa-solid fa-circle-plus"></i>Bid Increment - $</span>
+                            <span id="open-auction-body-increment-value">420</span>
+                            <span id="open-auction-body-buyPrice"><i class="fa-solid fa-cart-shopping"></i>Buy It Now Price - $</span>
+                            <span id="open-auction-body-buyPrice-value">420</span>
+                            <span id="open-auction-body-quality"><i class="fa-solid fa-shield-halved"></i></i>Quality - </span>
+                            <span id="open-auction-body-quality-value">420</span>
+                            <span id="open-auction-body-high-bidder"></span>
+                            <img src="" class="open-auction-body-quality-img">
+                            
+                        </div>
+
+                        <div class="open-auction-footer">
+                            <div class="open-auction-footer-item" id="open-auction-buy">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="open-auction-footer-item" id="open-auction-bid">
+                                <i class="fa-solid fa-circle-plus"></i>
+                            </div>
+                            <div class="open-auction-footer-item" id="open-auction-back">
+                                <i class="fas fa-arrow-circle-left open-auction-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="crypto-app">
+                    <div class="crypto-header">
+
+                        <img src="./img/qbit.png" class="crypto-header-picture">
+
+                        <div class="crypto-header-values">
+                            <div class="crypto-header-value crypto-portofolio">
+                                <span>Wallet</span>
+                                <p>0.2555</p>
+                            </div>
+                            <!-- <div class="crypto-header-value crypto-course">
+                                <span>Current Price</span>
+                                <p>$9000</p>
+                            </div>
+                            <div class="crypto-header-value crypto-volume">
+                                <span>Volume</span>
+                                <p>$2299.5‬</p>
+                            </div> -->
+                        </div>
+
+                        <div class="crypto-header-footer">
+                            <div class="crypto-header-footer-item" data-cryptotab="general">
+                                General
+                            </div>
+                            <div class="crypto-header-footer-item" data-cryptotab="transactions">
+                                Transactions
+                            </div>
+                            <!-- <div class="crypto-header-footer-item" data-cryptotab="course">
+                                History
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="crypto-action-page">
+                        <div class="crypto-action-page-buy-crypto">
+
+                            <div class="crypto-action-page-header">Buy Qbit</div>
+
+                            <div class="crypto-action-page-wallet">Wallet: 1 Qbit('s)</div>
+
+                            <i class="crypto-action-page-buy-crypto-input-coins-icon fas fa-coins"></i>
+                            <input type="number" class="crypto-action-page-buy-crypto-input-coins" required spellcheck="false" placeholder="1" step="1" min="0">
+
+                            <i class="crypto-action-page-buy-crypto-input-money-icon fas fa-dollar-sign"></i>
+                            <input type="number" class="crypto-action-page-buy-crypto-input-money" required spellcheck="false" placeholder="1" step="1" min="0">
+
+                            <div class="crypto-action-page-buy-crypto-footer">
+                                <div class="crypto-action-page-buy-crypto-footer-button" id="buy-crypto">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="crypto-action-page-buy-crypto-footer-button" id="cancel-crypto">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crypto-action-page-sell-crypto">
+
+                            <div class="crypto-action-page-header">Sell Qbit</div>
+
+                            <div class="crypto-action-page-wallet">Wallet: 1 Qbit('s)</div>
+
+                            <i class="crypto-action-page-sell-crypto-input-coins-icon fas fa-coins"></i>
+                            <input type="number" class="crypto-action-page-sell-crypto-input-coins" required spellcheck="false" placeholder="1" step="1" min="0">
+
+                            <i class="crypto-action-page-sell-crypto-input-money-icon fas fa-dollar-sign"></i>
+                            <input type="number" class="crypto-action-page-sell-crypto-input-money" required spellcheck="false" placeholder="1" step="1" min="0">
+
+                            <div class="crypto-action-page-buy-crypto-footer">
+                                <div class="crypto-action-page-buy-crypto-footer-button" id="sell-crypto">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="crypto-action-page-buy-crypto-footer-button" id="cancel-crypto">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crypto-action-page-transfer-crypto">
+
+                            <div class="crypto-action-page-header">Transfer Qbit</div>
+
+                            <div class="crypto-action-page-wallet">Wallet: 0 Qbit('s)</div>
+
+                            <i class="crypto-action-page-transfer-crypto-input-coins-icon fas fa-coins"></i>
+                            <input type="number" class="crypto-action-page-transfer-crypto-input-coins" required spellcheck="false" placeholder="1" step="1" min="0">
+
+                            <i class="crypto-action-page-transfer-crypto-input-money-icon fas fa-address-book"></i>
+                            <input type="texts" class="crypto-action-page-transfer-crypto-input-walletid" required spellcheck="false" placeholder="QB-12345678">
+
+                            <div class="crypto-action-page-buy-crypto-footer">
+                                <div class="crypto-action-page-buy-crypto-footer-button" id="transfer-crypto">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="crypto-action-page-buy-crypto-footer-button" id="cancel-crypto">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="crypto-page">
+                        <div class="cryptotab-general">
+                            <div class="cryptotab-general-actions">
+                                <!-- <div class="cryptotab-general-action" data-action="buy-crypto">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <span class="cryptotab-general-action-title">BUY</span>
+                                    <span class="cryptotab-general-action-description">You can buy crypto here.</span>
+                                </div>
+                                <div class="cryptotab-general-action" data-action="sell-crypto">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <span class="cryptotab-general-action-title">SELL</span>
+                                    <span class="cryptotab-general-action-description">You can sell crypto here.</span>
+                                </div> -->
+                                <div class="cryptotab-general-action" data-action="transfer-crypto">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <span class="cryptotab-general-action-title">TRANSFER</span>
+                                    <span class="cryptotab-general-action-description">You can transfer crypto here.</span>
+                                </div>
+                            </div>
+                            <div id="crypto-wallet-id">
+                                <span class="crypto-walletid" id="crypto-account">
+                                    Wallet ID: QB-12345678
+                                    <i class="far fa-copy"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="cryptotab-transactions">
+                            <div class="cryptotab-transactions-list">
+                                <!-- <div class="cryptotab-transactions-block">
+                                        <i class="fas fa-exchange-alt"></i>
+                                        <span class="cryptotab-transactions-block-title" style="color: green !important;">Bijschrijving</span>
+                                        <span class="cryptotab-transactions-block-happening">Er is &dollar;1000,- bijgeschreven</span>
+                                    </div> -->
+                            </div>
+                        </div>
+
+                        <div class="cryptotab-course">
+                            <div class="cryptotab-course-list">
+                                <!-- <div class="cryptotab-course-block">
+                                        <i class="fas fa-chart-line"></i>
+                                        <span class="cryptotab-course-block-title">Koers verandering</span>
+                                        <span class="cryptotab-course-block-happening"><span style="font-size: 1.3vh;">$1000</span> to <span style="font-size: 1.3vh;">$2000</span><span style="color: green;" class="crypto-percentage-change"><i style="color: green;" class="fas fa-arrow-right"></i> +(100%)</span></span>
+                                    </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="meos-app">
+                    <input type="text" id="testerino">
+                    <div class="meos-app-header">
+                        <span id="meos-app-title">MDT</span>
+                        <span id="meos-app-name">Welkom Jay Nandes</span>
+                    </div>
+
+                    <div class="meos-homescreen">
+                        <div class="meos-blocks">
+                            <div class="meos-block" data-meosblock="person">
+                                <i class="fas fa-user"></i>
+                                <p>Person</p>
+                            </div>
+                            <div class="meos-block" data-meosblock="vehicle">
+                                <i class="fas fa-car"></i>
+                                <p>Vehicle</p>
+                            </div>
+                            <div class="meos-block" data-meosblock="houses">
+                                <i class="fas fa-house-user"></i>
+                                <p>House</p>
+                            </div>
+                            <div class="meos-block" data-meosblock="alerts">
+                                <i class="fas fa-bell"></i>
+                                <p>Alerts</p>
+                            </div>
+                        </div>
+
+                        <span class="meos-recent-header">Most recent alert</span>
+                        <div class="meos-recent-alerts">
+                            <div class="meos-recent-alert"> <span class="meos-recent-alert-title">You don't have any alerts!!</span></div>
+                        </div>
+                    </div>
+
+                    <div class="meos-tabs">
+                        <div class="meos-person-page">
+                            <input class="person-search-input" type="text" spellcheck="false" required>
+                            <div class="confirm-search-person-test" id="search-pers">
+                                <i class="fas fa-search"></i>
+                            </div>
+
+                            <div class="person-search-results">
+                            </div>
+                        </div>
+
+                        <div class="meos-houses-page">
+                            <input class="person-search-input-house" type="text" spellcheck="false" required>
+                            <div class="confirm-search-person-house">
+                                <i class="fas fa-search"></i>
+                            </div>
+
+                            <div class="person-search-results">
+
+                            </div>
+                        </div>
+
+                        <div class="meos-vehicle-page">
+                            <input class="vehicle-search-input" type="text" spellcheck="false" required>
+                            <div class="confirm-search-vehicle">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="scan-search-vehicle">
+                                <i class="fas fa-barcode"></i>
+                            </div>
+
+                            <div class="vehicle-search-results">
+                                <!-- <div class="vehicle-search-result"> <div class="vehicle-search-result-name">T20</div> <div class="vehicle-search-result-plate">Kenteken: NL123456</div> <div class="vehicle-opensplit"></div> &nbsp; <div class="vehicle-search-result-owner">Owner: Jay Nandes</div> &nbsp; <div class="vehicle-search-result-apk">APK: Ja</div> <div class="vehicle-search-result-warrant">Reported: Ja</div> </div> -->
+                            </div>
+                        </div>
+
+                        <div class="meos-alerts-page">
+                            <div class="meos-clear-alerts">CLEAR</div>
+                            <div class="meos-alerts">
+                                <!-- <div class="meos-alert"> <span class="meos-alert-new" style="margin-bottom: 1vh;">NIEUW</span>
+                                        <p class="meos-alert-type">Melding: Test</p>
+                                        <p class="meos-alert-description">Melding: Test</p>
+                                        <hr>
+                                        <div class="meos-location-button">LOCATION</div>
+                                    </div> -->
+                            </div>
+                        </div>
+
+                        <div class="meos-tabs-footer">
+                            <i class="fas fa-undo-alt" id="back-meos"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="advert-app">
+                    <div class="advert-home">
+                        <div class="advert-header">
+                            <span id="advert-header-text">Advertisements</span>
+                            <span id="advert-header-name"></span>
+                        </div>
+
+                        <div class="advert-list">
+                            <!-- <div class="advert">
+                                    <span class="advert-sender">@JayNandes | 0612345678</span>
+                                    <p>Dit is een test advert Dit is een test advert Dit is een test advert Dit is een test advert Dit is een test advert</p>
+                                </div> -->
+                        </div>
+
+                        <div class="test-slet">
+                            <i class="fas fa-plus test-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="new-advert">
+                        <div class="new-advert-header">
+                            <span id="new-advert-header-text">New advertisement</span>
+                        </div>
+
+                        <textarea class="new-advert-textarea" spellcheck="false" required></textarea>
+
+
+                        <div class="new-advert-footer">
+                            <div class="new-advert-footer-item" id="new-advert-submit">
+                                <i class="fas fa-check-circle new-advert-icon"></i>
+                            </div>
+                            <div class="new-advert-footer-item" id="new-advert-back">
+                                <i class="fas fa-arrow-circle-left new-advert-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="darkweb-app">
+                    <div class="darkweb-home">
+                        <div class="darkweb-header">
+                            <span id="darkweb-header-text">DarkWeb</span>
+                            <span id="darkweb-header-name"></span>
+                        </div>
+
+                        <div class="darkweb-list">
+                            <!-- <div class="advert">
+                                <span class="advert-sender">@JayNandes | 0612345678</span>
+                                <p>Dit is een test advert Dit is een test advert Dit is een test advert Dit is een test advert Dit is een test advert</p>
+                            </div> -->
+                        </div>
+
+                        <div class="darkweb-slet">
+                            <i class="fas fa-plus darkweb-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="new-darkweb">
+                        <div class="new-darkweb-header">
+                            <span id="new-darkweb-header-text">New DarkWeb Message</span>
+                        </div>
+                        <input class="new-darkweb-name" placeholder="Name" required/>
+                        <textarea class="new-darkweb-textarea" spellcheck="false" required></textarea>
+
+                        <div class="new-darkweb-footer">
+                            <div class="new-darkweb-footer-item" id="new-darkweb-submit">
+                                <i class="fas fa-check-circle new-darkweb-icon"></i>
+                            </div>
+                            <div class="new-darkweb-footer-item" id="new-darkweb-back">
+                                <i class="fas fa-arrow-circle-left new-darkweb-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notes-app">
+                    <div class="notes-home">
+                        <div class="notes-header">
+                            <span id="notes-header-text">Notes</span>
+                            <span id="notes-header-name"></span>
+                        </div>
+
+                        <div class="notes-list">
+                            <!-- <div class="advert">
+                                <span class="advert-sender">@JayNandes | 0612345678</span>
+                                <p>Dit is een test advert Dit is een test advert Dit is een test advert Dit is een test advert Dit is een test advert</p>
+                            </div> -->
+                        </div>
+
+                        <div class="notes-add">
+                            <i class="fas fa-plus notes-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="new-note">
+                        <div class="new-note-header">
+                            <span id="new-note-header-text">New Note</span>
+                        </div>
+                        <input maxlength="49" class="new-note-name" placeholder="Title" required/>
+                        <textarea maxlength="1020" class="new-note-textarea" spellcheck="false" placeholder="Note" required></textarea>
+
+                        <div class="new-note-footer">
+                            <div class="new-note-footer-item" id="new-note-submit">
+                                <i class="fas fa-check-circle new-note-icon"></i>
+                            </div>
+                            <div class="new-note-footer-item" id="new-note-delete">
+                                <i class="fas fa-trash-alt new-note-icon"></i>
+                            </div>
+                            <div class="new-note-footer-item" id="new-note-back">
+                                <i class="fas fa-arrow-circle-left new-note-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="taxi-app">
+                    <div class="taxi-header">
+                        <img src="./img/downtown.webp" class="taxi-header-picture">
+                    </div>
+                    <div class="taxitab-general-action" id="get-taxinpc">
+                        <i class="fa-solid fa-taxi"></i>
+                        <span class="taxitab-general-action-title">CALL TAXI</span>
+                        <span class="taxitab-general-action-description">Call for a taxi to your location.</span>
+                    </div>
+                </div>
+
+                <div class="pings-app">
+                    <div class="pingstab-general-action" data-action="pinger">
+                        <i class="fa-solid fa-location-dot pingstab-general-action-icon"></i>
+                        <span class="pingstab-general-action-title">REQUEST LOCATION</span>
+                        <span class="pingstab-general-action-description">Send ping request.</span>
+                    </div>
+                    <i class="pings-input-number-icon fa-solid fa-user"></i>
+                    <input type="number" class="pings-input-number" required spellcheck="false" placeholder="Id" step="1" min="0">
+                </div>
+
+                <div class="printers-app">
+                    <div class="printers-header">
+                        <!-- <p>QMarket</p> -->
+                        <!-- <span>Browse the goods, buy with Qbits.</span> -->
+                        <img src="./img/apps/wiwang.webp" class="printers-header-picture">
+                    </div>
+
+                    <div class="printerdropdown">
+                        <div class="select">
+                            <span>Select a Remote Printer</span>
+                            <i class="fa fa-chevron-left"></i>
+                        </div>
+                        <input type="hidden" name="printer">
+                        <ul class="printerdropdown-menu"></ul>
+                    </div>
+
+                    <span id="printers-setup-urlheader">URL</span>
+                    <input type="text" class="printers-setup-url" required spellcheck="false" placeholder="URL of the image to be printed">
+
+                    <span id="printers-setup-copiesheader"># of Copies</span>
+                    <input type="number" class="printers-setup-copies" required spellcheck="false" placeholder="Copies to be printed" min="1" max="100" value="1">
+
+                    <div class="printers-setup-buttons">
+                        <div class="printers-setup-button" id="setup-printer-accept" data-toggle="race-setup" data-placement="bottom" title="Print">
+                            <i class="fa-solid fa-print"></i>
+                        </div>
+                        <div class="printers-setup-button" id="setup-printer-cancel" data-toggle="race-setup" data-placement="bottom" title="Reset">
+                            <i class="fas fa-times-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mail-app">
+                    <div class="mail-home">
+                        <div class="mail-header">
+                            <span id="mail-header-text">Inbox</span>
+                            <span id="mail-header-mail">jay.nandes@project-temp.us</span>
+                            <span id="mail-header-lastsync">Last synchronization 18:31</span>
+                        </div>
+
+                        <div class="mail-list">
+                            <!-- <div class="mail">
+                                    <span class="mail-sender">Instagram</span>
+                                    <div class="mail-text"><p>This is a test mail and is therefore not fully displayed because that is what I am testing</p></div>
+                                    <div class="mail-time">18:31</div>
+                                </div> -->
+                        </div>
+                        <div class="mail-add">
+                            <i class="fas fa-plus mail-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="opened-mail">
+                        <div class="opened-mail-header">
+                            <div class="mail-back"><i class="fas fa-chevron-left" id="mail-back"></i></div>
+                            <div class="mail-subject">
+                                <p>Subject</p>
+                            </div>
+                            <div class="mail-date">
+                                <p>19 February 2019 &nbsp; 08:19</p>
+                            </div>
+                            <div class="mail-spacing"></div>
+                            <div class="mail-content">
+                                <p>
+                                    This is a test mail and will not be fully shown because thats what I'm testing.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="opened-mail-footer">
+                            <div class="opened-mail-footer-item">
+                                <i class="fas fa-check-circle" id="accept-mail"></i>
+                            </div>
+                            <div class="opened-mail-footer-item">
+                                <i class="fas fa-trash-alt" id="remove-mail"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="new-mail">
+                        <div class="new-mail-header">
+                            <span id="new-mail-header-text">Send Mail</span>
+                        </div>
+                        <input maxlength="49" class="new-mail-recipient" placeholder="Recipient" required/>
+                        <input maxlength="49" class="new-mail-subject" placeholder="Subject" required/>
+                        <textarea maxlength="1020" class="new-mail-textarea" spellcheck="false" placeholder="Body" required></textarea>
+
+                        <div class="new-mail-footer">
+                            <div class="new-mail-footer-item" id="new-mail-submit">
+                                <i class="fas fa-check-circle new-mail-icon"></i>
+                            </div>
+                            <div class="new-mail-footer-item" id="new-mail-delete">
+                                <i class="fas fa-trash-alt new-mail-icon"></i>
+                            </div>
+                            <div class="new-mail-footer-item" id="new-mail-back">
+                                <i class="fas fa-arrow-circle-left new-mail-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="store-app">
+                    <div class="store-header">
+                        <p>App Store</p>
+                    </div>
+                    <div class="store-apps">
+                        <div class="storeapp" data-app="territory">
+                            <div class="storeapp-icon">
+                                <i class="fas fa-globe-europe"></i>
+                            </div>
+                            <div class="storeapp-title">
+                                Territory
+                            </div>
+                            <div class="storeapp-creator">
+                                Qbus
+                            </div>
+                            <div class="storeapp-download">
+                                <i class="fas fa-download"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-password-container">
+                        <div class="download-password">
+                            <span id="download-password-title">Security</span>
+                            <span id="download-password-disclaimer">To download this application you must enter a password.</span>
+                            <input type="text" class="download-password-input" spellcheck="false" required>
+
+                            <div class="download-password-buttons">
+                                <div class="download-password-accept"><i class="fas fa-check"></i></div>
+                                <div class="download-password-deny"><i class="fas fa-times"></i></div>
+                            </div>
+
+                            <div class="download-progressbar">
+                                <div class="download-progressbar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="racing-app">
+                    <div class="racing-overview">
+                        <div class="racing-app-header">
+                            Racing - Overview
+                        </div>
+
+                        <div class="racing-races">
+                            <!-- <div class="racing-race">
+                                    <span class="race-name"><i class="fas fa-flag-checkered"></i> Prison</span>
+                                    <span class="race-track"><i class="fas fa-unlock"></i> Joinable</span>
+                                    <div class="race-infomation">
+                                        <div class="race-infomation-tab" id="race-information-laps">0 Laps</div>
+                                        <div class="race-infomation-tab" id="race-information-distance">0 m</div>
+                                        <div class="race-infomation-tab" id="race-information-player"><i class="fas fa-user"></i> 0</div>
+                                    </div>
+                                    <div class="race-buttons">
+                                        <div class="race-button" id="join-race" data-toggle="tooltip" data-placement="left" title="Join"><i class="fas fa-sign-in-alt"></i></div>
+                                        <div class="race-button" id="quit-race" data-toggle="tooltip" data-placement="right" title="Quit"><i class="fas fa-sign-out-alt"></i></div>
+                                    </div>
+                                </div> -->
+                            <!-- <div class="racing-race"> <span class="race-name"><i class="fas fa-flag-checkered"></i> Prison</span> <span class="race-track"><i class="fas fa-unlock"></i> Joinable</span> <div class="race-infomation"> <div class="race-infomation-tab" id="race-information-laps">0 Laps</div> <div class="race-infomation-tab" id="race-information-distance">0 m</div> <div class="race-infomation-tab" id="race-information-player"><i class="fas fa-user"></i> 0</div> </div> <div class="race-buttons"> <div class="race-button" id="join-race" data-toggle="tooltip" data-placement="left" title="Join"><i class="fas fa-sign-in-alt"></i></div> <div class="race-button" id="quit-race" data-toggle="tooltip" data-placement="right" title="Quit"><i class="fas fa-sign-out-alt"></i></div> </div> </div> -->
+                        </div>
+
+                        <div class="racing-buttons">
+                            <div class="racing-button" id="setup-race">
+                                <i class="fas fa-flag-checkered"></i> Setup
+                            </div>
+                            <div class="racing-button" id="leaderboards-race">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="racing-button" id="create-race">
+                                <i class="fas fa-plus"></i> Create
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="racing-setup">
+                        <div class="racing-app-header">
+                            Racing - Setup
+                        </div>
+
+                        <span id="racing-setup-trackheader">Race Track</span>
+                        <div class="dropdown">
+                            <div class="select">
+                                <span>Select a Track</span>
+                                <i class="fa fa-chevron-left"></i>
+                            </div>
+                            <input type="hidden" name="gender">
+                            <ul class="dropdown-menu"></ul>
+                        </div>
+
+                        <span id="racing-setup-lapsheader">Laps</span>
+                        <input type="number" class="racing-setup-laps" required spellcheck="false" placeholder="Number of laps (0 is Sprint)">
+
+                        <!-- <span id="racing-setup-buyinheader">Buy-in Amount</span>
+                        <input type="number" class="racing-setup-buyin" required spellcheck="false" placeholder="Cost to race (0 for no buy-in)"> -->
+
+                        <span id="racing-setup-informationheader">Race Information</span>
+                        <div class="racing-setup-information-distance">Select a Track</div>
+                        <div class="racing-setup-information-creator">Select a Track</div>
+                        <div class="racing-setup-information-wr">Select a Track</div>
+
+                        <div class="racing-setup-buttons">
+                            <div class="racing-setup-button" id="setup-race-accept" data-toggle="race-setup" data-placement="bottom" title="Accept">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="racing-setup-button" id="setup-race-cancel" data-toggle="race-setup" data-placement="bottom" title="Cancel">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="racing-create">
+                        <div class="racing-create-block">
+                            <span id="racing-create-tracknameheader">Track Name</span>
+                            <input type="text" class="racing-create-trackname" required spellcheck="false" placeholder="Name of your track">
+
+                            <div class="racing-create-buttons">
+                                <div class="racing-create-button" id="racing-create-accept">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="racing-create-button" id="racing-create-cancel">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="racing-leaderboard">
+                        <div class="racing-app-header">
+                            Racing - Leaderboards
+                        </div>
+
+                        <span id="racing-leaderboards-header">Last Tracks</span>
+                        <div class="racing-leaderboards">
+                            <!-- <div class="racing-leaderboard-item">
+                                    <span class="racing-leaderboard-item-name"><i class="fas fa-flag-checkered"></i> Prison</span>
+                                    <span class="racing-leaderboard-item-info">Klik voor meer details</span>
+                                </div> -->
+                            <!-- <div class="racing-leaderboard-item"> <span class="racing-leaderboard-item-name"><i class="fas fa-flag-checkered"></i> Prison</span> <span class="racing-leaderboard-item-info">Klik voor meer details</span> </div> -->
+                        </div>
+
+                        <div class="racing-leaderboard-details">
+                            <div class="racing-leaderboard-details-block">
+                                <div class="racing-leaderboard-details-back"><i class="fas fa-times-circle"></i></div>
+                                <div class="racing-leaderboard-details-block-trackname"><i class="fas fa-flag-checkered"></i> Prison</div>
+                                <span id="leaderboard-list-header"><span style="float: left;">Racer</span><span style="margin-left: 5.55vh;"><i class="fas fa-stopwatch"></i></span><span style="float: right; margin-right: 2vh;">#</span></span>
+                                <div class="racing-leaderboard-details-block-list">
+                                    <!-- <div class="row"> <div class="name">Jay Nandes</div><div class="time">00:04:55</div><div class="score">1</div> </div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="racing-leaderboards-button">
+                            <i class="fas fa-times-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="twitter-app">
+
+                    <div class="twitter-home-tab">
+                        <!-- <div class="twitter-tweet" data-twthandler="@'+TwitterHandle.replace(" ", "_")+'">
+                                <div class="tweet-reply"><i class="fas fa-reply"></i></div>
+                                <div class="tweet-tweeter">'+Tweet.firstName+' '+Tweet.lastName+' &nbsp;<span>@'+TwitterHandle.replace(" ", "_")+' &middot; '+TimeAgo+'</span></div>
+                                <div class="tweet-message">@JAY</div>
+                                <div class="twt-img" style="top: 1vh;"><img src="'+PictureUrl+'" class="tweeter-image"></div>
+                            </div> -->
+                        <div class="twitter-no-tweets">
+                            <p>No Tweets have been posted yet.. :(</p>
+                        </div>
+                    </div>
+
+                    <div class="twitter-mentions-tab">
+                        <!-- <div class="twitter-mentioned-tweet"> 
+                                <div class="tweet-tweeter">Test &nbsp;<span>@Test &middot; 2 m</span></div>
+                                <div class="tweet-message">Dit is test tweet yeey. :) ggggggggggggggggggggggggggg gggggggggggggggggg</div>
+                                <div class="twt-img" style="top: 1vh;"><img src="'+PictureUrl+'" class="tweeter-image"></div>
+                            </div> -->
+                        <div class="twitter-no-tweets">
+                            <p>You haven't been mentioned yet.. :(</p>
+                        </div>
+                    </div>
+
+                    <div class="twitter-hashtags-tab">
+                        <div class="twitter-hashtag-tweets">
+                            <div class="twitter-tweet">
+                                <!-- <div class="tweet-tweeter">Test &nbsp;<span>@Test &middot; 2 m</span></div>
+                                    <div class="tweet-message">Dit is test tweet yeey. :) ggggggggggggggggggggggggggg gggggggggggggggggg</div>
+                                    <div class="twt-img" style="top: 1vh;"><img src="'+PictureUrl+'" class="tweeter-image"></div> -->
+                            </div>
+                        </div>
+                        <div class="twitter-hashtags">
+                            <!-- <div class="twitter-hashtag">
+                                    <div class="twitter-hashtag-status">Niet trending in Qbus</div>
+                                    <div class="twitter-hashtag-tag">#Test</div>
+                                    <div class="twitter-hashtag-messages">5 Tweets</div>
+                                </div> -->
+                            <div class="twitter-no-tweets">
+                                <p>There are no hashtags yet #SAD.. :(</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="twitter-new-tweet">
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+
+                    <div class="twitter-new-tweet-tab">
+                        <div class="twitter-new-tweet-header">
+                            <p>New Tweet</p>
+                        </div>
+
+                        <textarea id="tweet-new-message" placeholder="Twitter message" cols="30" rows="10" spellcheck="false" required></textarea>
+
+                        <div class="twitter-new-tweet-buttons">
+                            <div class="twitter-new-tweet-button" id="send-tweet">
+                                <p>Send</p>
+                            </div>
+                            <div class="twitter-new-tweet-button" id="cancel-tweet">
+                                <p>Cancel</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="twitter-header">
+                        <div id="twitter-home" data-twittertab="twitter-home" class="twitter-header-tab selected-twitter-header-tab"><i class="fas fa-home"></i></div>
+                        <div id="twitter-mentions" data-twittertab="twitter-mentions" class="twitter-header-tab"><i class="fas fa-at"></i></div>
+                        <div id="twitter-hashtags" data-twittertab="twitter-hashtags" class="twitter-header-tab"><i class="fas fa-hashtag"></i></div>
+                    </div>
+                </div>
+
+                <div class="bank-app">
+                    <div class="bank-app-loading">
+                        <img src="../html/img/apps/bank-logo3.png" class="qbank-logo">
+                        <span id="qbank-text">Bank</span>
+                    </div>
+                    <div class="bank-app-loaded">
+                        <div class="bank-app-header">
+                            <div data-headertype="accounts" class="bank-app-header-button bank-app-header-button-selected"> <i class="fas fa-align-left"></i>
+                                <p>Accounts</p>
+                            </div>
+                            <div data-headertype="invoices" class="bank-app-header-button"> <i class="fas fa-file-invoice"></i>
+                                <p>Invoices</p>
+                            </div>
+                            <div data-headertype="paychecks" class="bank-app-header-button"> <i class="fas fa-dollar-sign"></i>
+                                <p>Paychecks</p>
+                            </div>
+                        </div>
+
+                        <div class="bank-app-accounts">
+                            <div class="bank-app-account">
+                                <div class="bank-app-account-title">Account</div>
+                                <!-- <div class="bank-app-account-number" id="iban-account">NL01QBBA012341234123</div> -->
+                                <input type="text" class="bank-app-account-number" id="iban-account" readonly spellcheck="false">
+                                <div class="bank-app-account-balance">&dollar; 5000,00</div>
+                            </div>
+
+                            <div class="bank-app-account-actions">
+                                <i id="transfer-money" class="fas fa-exchange-alt bank-app-account-action-transfer"></i>
+                            </div>
+                        </div>
+
+                        <div class="bank-app-transfer">
+                            <div class="bank-app-transfer-header">Transfer Money</div>
+
+                            <i class="bank-transfer-iban-icon fas fa-credit-card"></i>
+                            <input type="text" id="bank-transfer-iban" class="bank-transfer-input" required spellcheck="false">
+                            <i class="bank-transfer-mycontacts-icon fas fa-address-book"></i>
+
+                            <i class="bank-transfer-amount-icon fas fa-dollar-sign"></i>
+                            <input type="number" id="bank-transfer-amount" class="bank-transfer-input" required spellcheck="false">
+
+                            <div class="bank-app-transfer-buttons">
+                                <div class="bank-app-transfer-button" id="accept-transfer">Transfer</div>
+                                <div class="bank-app-transfer-button" id="cancel-transfer">Cancel</div>
+                            </div>
+                        </div>
+
+                        <div class="bank-app-invoices">
+                            <div class="bank-app-invoices-list">
+                                <!-- <div class="bank-app-invoice"> <div class="bank-app-invoice-title">Betaalverzoek <span style="font-size: 1vh; color: gray;">(Afzender: 0612345678)</span></div> <div class="bank-app-invoice-amount">&dollar; 5000,-</div> <div class="bank-app-invoice-buttons"> <i class="fas fa-check-circle pay-invoice"></i> <i class="fas fa-times-circle decline-invoice"></i> </div> </div> -->
+                            </div>
+                        </div>
+
+                        <div class="bank-app-paychecks">
+                            <div class="bank-app-paychecks-list">
+                                <!-- <div class="bank-app-invoice"> <div class="bank-app-invoice-title">Betaalverzoek <span style="font-size: 1vh; color: gray;">(Afzender: 0612345678)</span></div> <div class="bank-app-invoice-amount">&dollar; 5000,-</div> <div class="bank-app-invoice-buttons"> <i class="fas fa-check-circle pay-invoice"></i> <i class="fas fa-times-circle decline-invoice"></i> </div> </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bank-app-my-contacts">
+                        <div class="bank-app-my-contacts-header">My Contacts</div>
+                        <div class="bank-app-my-contacts-list-header">
+                            <input type="text" id="bank-app-my-contact-search" placeholder="Contact name" spellcheck="false">
+                        </div>
+                        <div class="bank-app-my-contacts-list">
+                            <!-- <div class="bank-app-my-contact"> <div class="bank-app-my-contact-firstletter">P</div> <div class="bank-app-my-contact-name">Pieter Post</div> </div> -->
+                        </div>
+                        <div class="bank-app-my-contacts-list-back">Back</div>
+                    </div>
+                </div>
+
+                <div class="whatsapp-app">
+                    <div class="whatsapp-header">
+                        <div class="whatsapp-header-top"></div>
+                        <div class="whatsapp-header-footer">
+                            <p>Whatsapp</p>
+                            <i id="whatsapp-search-chats" class="fas fa-search"></i>
+                            <input type="text" id="whatsapp-search-input" placeholder="Contact name" spellcheck="false">
+                        </div>
+                    </div>
+                    <div class="whatsapp-chats">
+                        <!-- <div class="whatsapp-chat">
+                                <div class="whatsapp-chat-picture"></div>
+                                <div class="whatsapp-chat-name"><p>Testt</p></div>
+                                <div class="whatsapp-chat-lastmessage"><p>This is a hardcoded test message! 1111111111111111111111111111111111111</p></div>
+                                <div class="whatsapp-chat-lastmessagetime"><p>07:53</p></div>
+                            </div> -->
+                    </div>
+                    <div class="whatsapp-openedchat">
+                        <div class="whatsapp-header-openedchat">
+                            <div class="whatsapp-header-top-openedchat"></div>
+                            <div class="whatsapp-header-footer-openedchat">
+                                <div class="whatsapp-openedchat-picture"></div>
+                                <div class="whatsapp-openedchat-name">
+                                    <p></p>
+                                </div>
+                                <i id="whatsapp-openedchat-back" class="fas fa-arrow-left"></i>
+                                <!-- <i id="whatsapp-openedchat-delete" class="far fa-trash-alt"></i> -->
+                            </div>
+                        </div>
+                        <div class="whatsapp-openedchat-messages">
+
+                        </div>
+                        <div class="whatsapp-openedchat-input">
+                            <div class="whatsapp-extra-buttons">
+                                <div class="whatsapp-extra-button" id="send-location"><i class="fas fa-map-marker-alt"></i></div>
+                                <!-- <div class="whatsapp-extra-button" id="send-image"><i class="fas fa-map-marker-alt"></i></div> -->
+                                <!-- <div class="whatsapp-extra-button" id="send-location"><i class="fas fa-money-bill"></i></div> -->
+                            </div>
+                            <input type="text" id="whatsapp-openedchat-message" placeholder="Message" spellcheck="false">
+                            <i class="fas fa-paper-plane" id="whatsapp-openedchat-send"></i>
+                            <i class="fas fa-ellipsis-v" id="whatsapp-openedchat-message-extras"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="phone-currentcall-container">
+                <div class="phone-currentcall-icon"><i class="fas fa-phone"></i></div>
+                <div class="phone-currentcall-title">Outgoing call</div>
+                <div class="phone-currentcall-contact">with 0612345678</div>
+            </div>
+
+            <!-- Phone Home Button -->
+            <div class="phone-footer">
+                <div class="phone-home-container">
+                    <div class="phone-home-button"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="screen-notifications-container">
+        <div class="screen-notification-icon"><i class="fab fa-twitter"></i></div>
+        <div class="screen-notification-title">
+            <p>New Tweet!</p>
+        </div>
+        <div class="screen-notification-content">
+            <p>This is a test notification JOINK 222222222222222222222222222222</p>
+        </div>
+    </div>
+
+    <div class="call-notifications">
+        <div class="call-notifications-icon"><i class="fas fa-phone"></i></div>
+        <div class="call-notifications-title">
+            <p>Incoming Call</p>
+        </div>
+        <div class="call-notifications-content">
+            <p>You have an incoming call from Test</p>
+        </div>
+    </div>
+
+    <div class="payphone">
+        <img src="./img/payphone2.jpg" alt="payphone" class="payphone-frame">
+
+        <div class="payphone-dials">
+            <div class="payphone-dial" data-number="1"></div>
+            <div class="payphone-dial" data-number="2"></div>
+            <div class="payphone-dial" data-number="3"></div>
+            <div class="payphone-dial" data-number="4"></div>
+            <div class="payphone-dial" data-number="5"></div>
+            <div class="payphone-dial" data-number="6"></div>
+            <div class="payphone-dial" data-number="7"></div>
+            <div class="payphone-dial" data-number="8"></div>
+            <div class="payphone-dial" data-number="9"></div>
+            <div class="payphone-dial" data-number="remove"></div>
+            <div class="payphone-dial" data-number="0"></div>
+        </div>
+
+        <div class="payphone-call"></div>
+
+        <div class="payphone-input">
+            <p></p>
+        </div>
+    </div>
+
+    <!-- <div class="emergency-button">
+            <div class="emergency-button-header">
+                <img src="./img/politie-2.png" class="police-logo-2">
+            </div>
+            <div class="emergency-button-footer">
+                <img src="./img/politie-3.png" class="police-logo-3">
+            </div>
+        </div> -->
+
+    <!-- JavaScript File's -->
+    <script src="./js/config.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/settings.js"></script>
+    <script src="./js/phone.js"></script>
+    <script src="./js/twitter.js"></script>
+    <script src="./js/bank.js"></script>
+    <script src="./js/whatsapp.js"></script>
+    <script src="./js/garage.js"></script>
+    <script src="./js/mail.js"></script>
+    <script src="./js/darkweb.js"></script>
+    <script src="./js/meos.js"></script>
+    <script src="./js/crypto.js"></script>
+    <script src="./js/racing.js"></script>
+    <script src="./js/houses.js"></script>
+    <script src="./js/lawyers.js"></script>
+    <script src="./js/qstore.js"></script>
+    <script src="./js/trucker.js"></script>
+    <script src="./js/plants.js"></script>
+    <script src="./js/loans.js"></script>
+    <script src="./js/carboost.js"></script>
+    <script src="./js/silkroad.js"></script>
+    <script src="./js/notes.js"></script>
+    <script src="./js/taxi.js"></script>
+    <script src="./js/delivery.js"></script>
+    <script src="./js/groups.js"></script>
+    <script src="./js/pings.js"></script>
+    <script src="./js/darklog.js"></script>
+    <script src="./js/auctions.js"></script>
+    <script src="./js/gang.js"></script>
+    <script src="./js/printers.js"></script>
+    <script src="./js/payphone.js"></script>
+</body>
+
+</html>

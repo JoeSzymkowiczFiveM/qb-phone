@@ -1,0 +1,360 @@
+.auctions-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgb(243, 243, 243);
+    overflow: hidden;
+}
+
+.auctions-header {
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+    background-color: #DE6B48;
+    top: 0;
+    border-bottom: .3vh solid #DE6B48;
+    color: rgb(255, 255, 255);
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+}
+
+.auctions-header-picture {
+    position: absolute;
+    width: 13vh;
+    margin: 0 auto;
+    left: 0;
+    right: 1vh;
+    top: 3.1vh;
+}
+
+.auctions-header>p {
+    line-height: 12vh;
+    text-indent: 2vh;
+}
+
+.auctions-header>span {
+    position: absolute;
+    top: 9.5vh;
+    left: 2vh;
+    font-size: 1.2vh;
+    height: 2vh;
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.auctions-list {
+    position: absolute;
+    background-color: #00000033;
+    width: 90%;
+    height: 73%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 3%;
+    border-radius: .5vh;
+    overflow-y: scroll;
+}
+
+.auctions-list::-webkit-scrollbar {
+    display: none;
+}
+
+.auction-list {
+    position: relative;
+    width: 95%;
+    height: 6vh;
+    background-color: #DE6B48;
+    margin: 2.5%;
+    border-radius: .5vh;
+}
+
+.auction-list:hover {
+    background-color: #E99D86;
+    transition: .1s linear;
+}
+
+.auction-list-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5vh;
+    height: 5vh;
+    text-align: center;
+    line-height: 3.5vh;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+}
+
+.auction-list-top {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    left: 5.5vh;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.3vh;
+    max-width: 18vh;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    color: rgb(255, 255, 255);
+}
+
+.auction-list-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5.5vh;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.3vh;
+    max-width: 18vh;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    color: rgb(255, 255, 255);
+}
+
+.auction-list-bottom {
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    left: 5.5vh;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.3vh;
+    max-width: 19vh;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    color: rgb(255, 255, 255);
+}
+
+.no-auctions {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.3vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    max-width: 14vh;
+    color: rgb(255, 255, 255);
+}
+
+.auction-list-call {
+    color: white;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    right: 2vh;
+    font-size: 2vh;
+    transform: rotate(90deg);
+    transition: .08s ease-in-out;
+}
+
+.auction-list-call:hover {
+    color: rgb(66, 161, 11);
+    opacity: .8;
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+
+/* Buttons */
+
+.auction-list-buttons {
+    position: absolute;
+    right: 1vh;
+    bottom: 1.25vh;
+    height: 3vh;
+    width: 15vh;
+    text-align: right;
+    line-height: 3.5vh;
+}
+
+.auction-list-buttons>i {
+    margin-left: .2vh;
+    margin-right: .2vh;
+    font-size: 2vh;
+}
+
+.accept-auction {
+    color: rgb(233, 233, 233);
+    transition: .1s;
+}
+
+.accept-auction:hover {
+    color: rgb(255, 255, 255);
+}
+
+.decline-auction {
+    color: #e84118;
+    transition: .1s;
+}
+
+.decline-auction:hover {
+    color: #ff5f38;
+}
+
+.vin-auction {
+    color: #F6AE2D;
+    transition: .1s;
+}
+
+.vin-auction:hover {
+    color: #F8C462;
+}
+
+.open-auction {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: #DE6B48;
+    overflow: hidden;
+    left: -30vh;
+}
+
+.open-auction-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(225, 225, 225);
+}
+
+.open-auction-footer-item {
+    position: relative;
+    float: left;
+    width: 33%;
+    height: 100%;
+    background-color: #DE6B48;
+    text-align: center;
+    line-height: 5vh;
+    font-size: 2.2vh;
+    transition: .1s linear;
+    color: rgb(225, 225, 225);
+}
+
+.open-auction-footer-item:hover {
+    background-color: #E99D86;
+    transition: .1s linear;
+}
+
+.open-auction-footer-item:hover .open-auction-icon {
+    color: rgb(225, 225, 225);
+    animation: Shake 1s infinite;
+}
+
+.open-auction-header {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+}
+
+#open-auction-header-text {
+    position: absolute;
+    top: 5vh;
+    left: 2vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 3.0vh;
+    color: rgb(225, 225, 225);
+}
+
+.open-auction-body {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+}
+
+#open-auction-body-bidPrice {
+    position: absolute;
+    top: 11vh;
+    left: 2vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.8vh;
+    color: rgb(225, 225, 225);
+}
+
+#open-auction-body-bidPrice-value {
+    position: absolute;
+    top: 11vh;
+    left: 14vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.8vh;
+    color: rgb(225, 225, 225);
+}
+
+#open-auction-body-increment {
+    position: absolute;
+    top: 15vh;
+    left: 2vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.8vh;
+    color: rgb(225, 225, 225);
+}
+
+#open-auction-body-increment-value {
+    position: absolute;
+    top: 15vh;
+    left: 18vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.8vh;
+    color: rgb(225, 225, 225);
+}
+
+#open-auction-body-buyPrice {
+    position: absolute;
+    top: 19vh;
+    left: 2vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.8vh;
+    color: rgb(225, 225, 225);
+}
+
+#open-auction-body-buyPrice-value {
+    position: absolute;
+    top: 19vh;
+    left: 20.2vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.8vh;
+    color: rgb(225, 225, 225);
+}
+
+#open-auction-body-quality {
+    position: absolute;
+    top: 23vh;
+    left: 2vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.8vh;
+    color: rgb(225, 225, 225);
+}
+
+#open-auction-body-quality-value {
+    position: absolute;
+    top: 23vh;
+    left: 11vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.8vh;
+    color: rgb(225, 225, 225);
+}
+
+#open-auction-body-high-bidder {
+    position: absolute;
+    top: 27vh;
+    left: 1.5vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.8vh;
+    color: #c53838;
+}
+
+.open-auction-body-quality-img {
+    position: absolute;
+    width: 14vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 30vh;
+}

@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.groups-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgb(36, 36, 36);
+    overflow: hidden;
+}
+
+.groups-app-header {
+    position: absolute;
+    height: 9vh;
+    width: 100%;
+    background-color: #9E0031;
+    text-align: center;
+    line-height: 12.5vh;
+    color: white;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.5vh;
+}
+
+.groups-homescreen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0vh;
+}
+
+
+
+.groups-listscreen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -30vh;
+}
+
+.groups-list {
+    position: absolute;
+    width: 85%;
+    height: 44.5vh;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    top: 10.5vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+
+.groups-list::-webkit-scrollbar {
+    display: none;
+}
+
+.groups-listitem {
+    position: relative;
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(48, 47, 47);
+    box-shadow: 0 0 1vh .1vh rgba(0, 0, 0, 0.15);
+    border-radius: 2vh;
+    transition: .08s linear;
+    margin-bottom: 1vh;
+}
+
+.groups-listitem-firstletter {
+    position: relative;
+    line-height: 7vh;
+    left: 1.2vh;
+    background-color: #ee5253;
+    padding-top: 1.1vh;
+    padding-bottom: 1.1vh;
+    padding-left: 1.6vh;
+    padding-right: 1.6vh;
+    border-radius: 50%;
+    color: white;
+    font-family: 'Samsung Sans Bold';
+    font-size: 1.8vh;
+    transition: .05s linear;
+}
+
+.groups-listitem:hover {
+    background-color: rgb(78, 78, 78);
+}
+
+.groups-listitem-name {
+    position: absolute;
+    left: 7vh;
+    color: white;
+    line-height: 7vh;
+    font-family: 'Samsung Sans Regular';
+}
+
+.groups-requestscreen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -30vh;
+}
+
+.groups-requestdetails {
+    position: absolute;
+    width: 85%;
+    height: 44.5vh;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    top: 10.5vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+
+.groups-requestdetails::-webkit-scrollbar {
+    display: none;
+}
+
+.groups-requestitem {
+    position: relative;
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(48, 47, 47);
+    box-shadow: 0 0 1vh .1vh rgba(0, 0, 0, 0.15);
+    border-radius: 2vh;
+    transition: .08s linear;
+    margin-bottom: 1vh;
+}
+
+.groups-requestitem-firstletter {
+    position: relative;
+    line-height: 7vh;
+    left: 1.2vh;
+    background-color: #ee5253;
+    padding-top: 1.1vh;
+    padding-bottom: 1.1vh;
+    padding-left: 1.6vh;
+    padding-right: 1.6vh;
+    border-radius: 50%;
+    color: white;
+    font-family: 'Samsung Sans Bold';
+    font-size: 1.8vh;
+    transition: .05s linear;
+}
+
+.groups-requestitem:hover {
+    background-color: rgb(78, 78, 78);
+}
+
+.groups-requestitem-name {
+    position: absolute;
+    left: 7vh;
+    color: white;
+    line-height: 7vh;
+    font-family: 'Samsung Sans Regular';
+}
+
+.groups-taskscreen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -30vh;
+}
+
+.groups-tasksdetails {
+    position: absolute;
+    width: 85%;
+    height: 44.5vh;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    top: 10.5vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+
+.groups-tasksdetails::-webkit-scrollbar {
+    display: none;
+}
+
+.groups-taskstitem {
+    position: relative;
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(48, 47, 47);
+    box-shadow: 0 0 1vh .1vh rgba(0, 0, 0, 0.15);
+    border-radius: 2vh;
+    transition: .08s linear;
+    margin-bottom: 1vh;
+}
+
+
+.groups-tasksitem:hover {
+    background-color: rgb(78, 78, 78);
+}
+
+.groups-requestitem-name {
+    position: absolute;
+    left: 7vh;
+    color: white;
+    line-height: 7vh;
+    font-family: 'Samsung Sans Regular';
+}
+
+.groups-detailscreen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -30vh;
+}
+
+.vehicle-brand {
+    position: relative;
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+    padding: .8vh;
+    color: white;
+    font-family: 'Samsung Sans Regular';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.2vh;
+}
+
+.vehicle-model {
+    position: relative;
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+    padding: .8vh;
+    color: white;
+    font-family: 'Samsung Sans Regular';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.2vh;
+}
+
+.vehicle-plate {
+    position: relative;
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+    padding: .8vh;
+    color: white;
+    font-family: 'Samsung Sans Regular';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.2vh;
+}
+
+.vehicle-garage {
+    position: relative;
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+    padding: .8vh;
+    color: white;
+    font-family: 'Samsung Sans Regular';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.2vh;
+}
+
+.vehicle-status {
+    position: relative;
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+    padding: .8vh;
+    color: white;
+    font-family: 'Samsung Sans Regular';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.2vh;
+}
+
+.vehicle-fuel {
+    position: relative;
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+    padding: .8vh;
+    color: white;
+    font-family: 'Samsung Sans Regular';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.2vh;
+}
+
+.vehicle-engine {
+    position: relative;
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+    padding: .8vh;
+    color: white;
+    font-family: 'Samsung Sans Regular';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.2vh;
+}
+
+.vehicle-body {
+    position: relative;
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+    padding: .8vh;
+    color: white;
+    font-family: 'Samsung Sans Regular';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.2vh;
+}
+
+
+.vehicle-answer {
+    float: right;
+    font-size: 1.1vh;
+}
+
+.groups-footer {
+    position: absolute;
+    bottom: 1vh;
+    margin: 0 auto;
+    width: 90%;
+    height: 5vh;
+    left: 1.5vh;
+    background-color: rgb(233, 233, 233);
+    border-radius: .3vh;
+    transition: .05s linear;
+    text-align: center;
+    line-height: 5vh;
+    font-family: 'Samsung Sans Bold';
+    font-size: 1.4vh;
+}
+
+.groups-footer:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+.groups-general-action {
+    position: relative;
+    width: 90%;
+    height: 5.5vh;
+    top: 9vh;
+    margin: 0 auto;
+    background-color: #9E0031;
+    box-shadow: 0 0 1vh .1vh rgba(0, 0, 0, 0.15);
+    margin-top: 1vh;
+    font-family: 'Open Sans';
+    border-radius: .8vh;
+    transition: .05s linear;
+}
+
+.groups-general-action>i {
+    position: absolute;
+    left: 1.25vh;
+    line-height: 6vh;
+    font-size: 2vh;
+    color: white;
+}
+
+.groups-general-action-title {
+    position: absolute;
+    left: 5vh;
+    top: 1vh;
+    font-size: 1.3vh;
+    color: white;
+    font-weight: bold;
+}
+
+.groups-general-action-description {
+    position: absolute;
+    left: 5vh;
+    top: 3vh;
+    font-size: 1.1vh;
+    color: white;
+}
+
+.groups-general-action:hover {
+    background-color: #FF0A58;
+}
+
+/* Buttons */
+
+.groups-request-buttons {
+    position: absolute;
+    right: .6vh;
+    bottom: 2.3vh;
+    text-align: right;
+}
+
+.groups-request-buttons>i {
+    margin-left: .2vh;
+    margin-right: .2vh;
+    font-size: 1.75vh;
+}
+
+.accept-group-request {
+    color: #4cd137;
+    transition: .1s;
+}
+
+.accept-group-request:hover {
+    color: #70f75b;
+}
+
+.decline-group-request {
+    color: #e84118;
+    transition: .1s;
+}
+
+.decline-group-request:hover {
+    color: #ff5f38;
+}
+
+.groups-vehicles {
+    position: absolute;
+    width: 85%;
+    height: 27vh;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    bottom: 0.5vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+
+.groups-vehicles::-webkit-scrollbar {
+    display: none;
+}
+
+.groups-vehicle {
+    position: relative;
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(48, 47, 47);
+    box-shadow: 0 0 1vh .1vh rgba(0, 0, 0, 0.15);
+    border-radius: 2vh;
+    transition: .08s linear;
+    margin-bottom: 1vh;
+}
+
+.groups-vehicle-firstletter {
+    position: relative;
+    line-height: 7vh;
+    left: 1.2vh;
+    background-color: #ee5253;
+    padding-top: 1.1vh;
+    padding-bottom: 1.1vh;
+    padding-left: 1.6vh;
+    padding-right: 1.6vh;
+    border-radius: 50%;
+    color: white;
+    font-family: 'Samsung Sans Bold';
+    font-size: 1.8vh;
+    transition: .05s linear;
+}
+
+.groups-vehicle:hover {
+    background-color: rgb(78, 78, 78);
+}
+
+.groups-vehicle-name {
+    position: absolute;
+    left: 7vh;
+    color: white;
+    line-height: 7vh;
+    font-family: 'Samsung Sans Regular';
+}
+
+.groups-list-buttons {
+    position: absolute;
+    right: .6vh;
+    bottom: 2.3vh;
+    text-align: right;
+}
+
+.groups-list-buttons>i {
+    margin-left: .2vh;
+    margin-right: .2vh;
+    font-size: 1.75vh;
+}
+
+.groups-kick-button {
+    color: #e84118;
+    transition: .1s;
+}
+
+.groups-kick-button:hover {
+    color: #ff5f38;
+}

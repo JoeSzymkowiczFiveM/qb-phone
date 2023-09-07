@@ -1,0 +1,307 @@
+.darklogs-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgb(243, 243, 243);
+    overflow: hidden;
+}
+
+.darklogs-header {
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+    background-color: #222022;
+    top: 0;
+    border-bottom: .3vh solid #080508;
+    color: white;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+}
+
+#darklogs-header-text {
+    position: absolute;
+    top: 5vh;
+    left: 2vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.8vh;
+    color: white;
+}
+
+#darklogs-header-name {
+    position: absolute;
+    top: 8vh;
+    left: 2vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.4vh;
+    color: white;
+}
+
+.darklogs-list {
+    position: absolute;
+    width: 99%;
+    background-color: rgb(255, 255, 255);
+    height: 39.5vh;
+    top: 12vh;
+    left: .1vh;
+    border-radius: 1.5vh 1.5vh 1.5vh 1.5vh;
+    box-shadow: 0px 0 1px .5px rgba(0, 0, 0, 0.233);
+    overflow-x: hidden !important;
+    overflow-y: scroll;
+}
+
+.darklogs-list::-webkit-scrollbar {
+    display: none;
+}
+
+.darklog-list {
+    position: relative;
+    width: 95%;
+    height: 6vh;
+    background-color: rgba(31, 31, 31, 0.89);
+    margin: 2.5%;
+    border-radius: .5vh;
+}
+
+.darklog-list-class {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3.5vh;
+    height: 3.5vh;
+    background-color: #470b45;
+    text-align: center;
+    left: 1vh;
+    line-height: 3.5vh;
+    border-radius: 50%;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.8vh;
+    color: rgb(255, 255, 255);
+}
+
+.darklog-list-top {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    left: 5.5vh;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.3vh;
+    max-width: 18vh;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    color: rgb(255, 255, 255);
+}
+
+.darklog-list-middle {
+    position: absolute;
+    top: 66%;
+    transform: translateY(-50%);
+    left: 5.5vh;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.3vh;
+    max-width: 18vh;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+}
+
+/* .darklog-list-bottom {
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    left: 5.5vh;
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.3vh;
+    max-width: 19vh;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    color: rgb(255, 255, 255);
+} */
+
+.no-darklogs {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Samsung Sans Medium';
+    font-size: 1.3vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    max-width: 14vh;
+    color: rgb(255, 255, 255);
+}
+
+.darklog-list-call {
+    color: white;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    right: 2vh;
+    font-size: 2vh;
+    transform: rotate(90deg);
+    transition: .08s ease-in-out;
+}
+
+.darklog-list-call:hover {
+    color: rgb(66, 161, 11);
+    opacity: .8;
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+
+/* Buttons */
+
+.darklog-list-buttons {
+    position: absolute;
+    right: 0vh;
+    bottom: .1vh;
+    height: 3vh;
+    width: 15vh;
+    text-align: right;
+    line-height: 3.5vh;
+}
+
+.darklog-list-buttons>i {
+    margin-left: .2vh;
+    margin-right: .2vh;
+    font-size: 1.75vh;
+}
+
+.accept-darklog {
+    color: #4cd137;
+    transition: .1s;
+}
+
+.accept-darklog:hover {
+    color: #70f75b;
+}
+
+.decline-darklog {
+    color: #e84118;
+    transition: .1s;
+}
+
+.decline-darklog:hover {
+    color: #ff5f38;
+}
+
+.vin-darklog {
+    color: #F6AE2D;
+    transition: .1s;
+}
+
+.vin-darklog:hover {
+    color: #F8C462;
+}
+
+.new-darklog {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: #080508;
+    overflow: hidden;
+    left: -30vh;
+}
+
+.new-darklog-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(30, 30, 30);
+}
+
+.new-darklog-footer-item {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: #080508;
+    text-align: center;
+    line-height: 5vh;
+    font-size: 2.2vh;
+    transition: .1s linear;
+    color: rgb(48, 48, 48);
+}
+
+.new-darklog-footer-item:hover {
+    background-color: #080508;
+    transition: .1s linear;
+}
+
+.new-darklog-footer-item:hover .new-darklog-icon {
+    color: rgb(32, 32, 32);
+    animation: Shake 1s infinite;
+}
+
+.new-darklog-header {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    background-color: #222022;
+}
+
+#new-darklog-header-text {
+    position: absolute;
+    top: 5vh;
+    left: 2vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.8vh;
+    color: white;
+}
+
+.new-darklog-name {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 80%;
+    top: 12vh;
+    color: rgb(32, 32, 32);
+    background-color: rgb(234, 234, 234);
+    border: none;
+    box-shadow: 0px 0 1px .5px rgba(255, 255, 255, 0.233);
+    outline: none;
+}
+
+.new-darklog-textarea {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 15vh;
+    height: 30vh;
+    width: 80%;
+    outline: none;
+    border: none;
+    resize: none;
+    color: rgb(32, 32, 32);
+    background-color: rgb(234, 234, 234);
+    /* border-radius: 1.5vh 1.5vh 1.5vh 1.5vh; */
+    box-shadow: 0px 0 1px .5px rgba(255, 255, 255, 0.233);
+    padding: 1.5vh;
+    font-family: 'Samsung Sans Regular';
+    border-bottom: 0.5vh solid #fff;
+    transition: .1s linear;
+}
+
+.new-darklog-textarea:focus {
+    border-bottom: 0.5vh solid rgb(30, 30, 30)
+}
+
+.new-darklog-textarea:valid {
+    border-bottom: 0.5vh solid #29b417;
+}
+
+.darklogs-home {
+    position: relative;
+    left: 0;
+}
