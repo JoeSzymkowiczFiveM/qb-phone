@@ -40,6 +40,14 @@ This script is not plug-and-play and is probably horribly exploitable, in it's c
 
 ![image](https://github.com/JoeSzymkowiczFiveM/qb-phone/assets/70592880/805975c0-37df-4261-ab2b-d1d78ca4e3cb)
 
+![image](https://github.com/JoeSzymkowiczFiveM/qb-phone/assets/70592880/7eb29813-b9e3-433b-8f7e-a62821010fd2)
+
+![image](https://github.com/JoeSzymkowiczFiveM/qb-phone/assets/70592880/853c3c28-6866-4489-8eef-1401735f2264)
+
+![image](https://github.com/JoeSzymkowiczFiveM/qb-phone/assets/70592880/f927ff05-94d4-4920-a94c-8c55acb7eb3c)
+
+![image](https://github.com/JoeSzymkowiczFiveM/qb-phone/assets/70592880/2df65734-dd54-4aa3-a176-84c95483cace)
+
 
 ## Preview
 
